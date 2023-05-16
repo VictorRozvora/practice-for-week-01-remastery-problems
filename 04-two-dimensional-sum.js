@@ -4,7 +4,19 @@ and returns the total sum of all numbers.
 */
 
 // Your code here
+let twoDimensionalSum = function(arr) {
+    let sum = 0;
 
+    for (let i = 0; i < arr.length; i++) {
+        let subArr = arr[i];
+
+        for (let j = 0; j < subArr.length; j++) {
+            sum += subArr[j];
+        }
+    }
+
+    return sum;
+};
 
 
 let arr1 = [
